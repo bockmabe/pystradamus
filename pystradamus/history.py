@@ -53,7 +53,7 @@ def refresh(args):
     jql = ' '.join([
         'assignee = %s AND' % args.username,
         'cf[%s] is not EMPTY AND' % j.estimate_field_id,
-        'status = Closed AND',
+#        'status = Closed AND',
         'resolution = Done',
         'ORDER BY updated DESC'
     ])
